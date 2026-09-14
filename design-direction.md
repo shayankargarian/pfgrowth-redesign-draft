@@ -5,7 +5,7 @@ Modern growth-finance product site. Clarity first. Product-sharp, not heritage w
 ## Mood
 Forward tech with Apple-like restraint: large type, generous whitespace, calm surfaces, one clear hero claim. Still sharper modern fintech for growth debt founders (confident numbers, geometric sans, high contrast). Not PE brochure. Not family-office parchment. Not private-credit desk.
 
-Think product marketing clarity over finance ornament. Fewer cards, more breathing room. Accent used sparingly as signal, not chrome everywhere.
+Think product marketing clarity over finance ornament. Fewer cards, more breathing room. Accent used sparingly as signal, not chrome everywhere. Original abstract imagery supports hero and section rhythm (no stock brand photos).
 
 ## Colour
 | Token | Hex | Use |
@@ -23,15 +23,14 @@ Think product marketing clarity over finance ornament. Fewer cards, more breathi
 Contrast: body on Snow or Void ≥ 7:1. Accent buttons: white text on Accent, or dark text only if contrast holds. No warm copper. No parchment. No neon lime wash.
 
 ## Type
-- **Display:** Inter (tight, product UI) or SF-adjacent geometric sans via Inter + Space Grotesk for wordmark only.
-- Prefer one strong family: **Inter** for UI and display (Apple-like clarity). Optional Space Grotesk for logo only.
+- Prefer one strong family: **Inter** for UI and display.
 - Scale: hero 2.75-4.25rem; section 1.75-2.25rem; body 1.0625rem / 1.5; meta 0.8125rem.
 - Tracking tight on large display (−0.04em). Hierarchy by size/weight; colour second.
 
 ## Layout and hierarchy
 - Mobile-first. Side padding 20-24px. Section gaps 80-120px (more air).
-- Sticky compact header + “Talk to us” pill.
-- Hero: one claim, short lede, primary CTA, secondary text link. Fit strip immediately below.
+- Sticky compact header + “Talk to us” pill (visible on phone).
+- Hero: one claim, short lede, primary CTA, secondary text link. Fit strip immediately below. Hero visual after fit.
 - Prefer product-hero blocks and short proof rows over dense six-card grids.
 - Cards: thin hairlines, almost no shadow, calm hover (border only).
 - Phone composition is source of truth.
@@ -52,6 +51,7 @@ Contrast: body on Snow or Void ≥ 7:1. Accent buttons: white text on Accent, or
 - Not Fraunces + copper + warm paper.
 - Not loud neon fintech chrome.
 - Not Elementor clone or logo zoo.
+- Not HubSpot.
 
 ## Prototype notes
-Static HTML/CSS/JS. HubSpot unwired. Footer draft watermark retained.
+Static HTML/CSS/JS. Form unwired. Footer draft watermark retained.
