@@ -1,57 +1,57 @@
 # Design direction: PF Growth redesign prototype
 
-One-page mood for a premium growth-finance web experience. Distinctive, not a generic SaaS template.
+Modern growth-finance product site. Clarity first. Product-sharp, not heritage wealth.
 
 ## Mood
-Calm authority meets founder urgency. Think private credit desk crossed with a well-edited tech journal: dense enough to feel serious, airy enough to read on a phone at 390px. Warm copper light on deep ink. No neon gradients, no purple blobs, no stock “handshake on glass table.”
+Forward tech with Apple-like restraint: large type, generous whitespace, calm surfaces, one clear hero claim. Still sharper modern fintech for growth debt founders (confident numbers, geometric sans, high contrast). Not PE brochure. Not family-office parchment. Not private-credit desk.
+
+Think product marketing clarity over finance ornament. Fewer cards, more breathing room. Accent used sparingly as signal, not chrome everywhere.
 
 ## Colour
 | Token | Hex | Use |
 | --- | --- | --- |
-| Ink | `#0B1220` | Primary background, text on light |
-| Slate | `#1A2436` | Cards, elevated surfaces |
-| Mist | `#E8EDF5` | Light section backgrounds |
-| Paper | `#F7F5F1` | Warm off-white (paper, not sterile grey) |
-| Copper | `#C47A3A` | Primary accent, links, key CTAs |
-| Copper deep | `#9A5A28` | Hover / pressed |
-| Fog | `#8B95A8` | Secondary text (must still pass AA on Ink) |
-| Signal | `#2F6F5E` | Success / positive fit cues |
+| Void | `#0A0A0B` | Primary dark background |
+| Panel | `#141416` | Elevated dark surfaces |
+| Line | `rgba(255,255,255,0.08)` | Hairline borders on dark |
+| Snow | `#F5F5F7` | Light sections (cool Apple grey-white) |
+| Ink | `#1D1D1F` | Text on light |
+| Accent | `#2997FF` | Primary CTA / links (electric blue, restrained) |
+| Accent deep | `#147CE5` | Hover |
+| Mute | `#86868B` | Secondary text |
+| Signal | `#30D158` | Success / positive fit (sparingly) |
 
-Contrast intent: body text on Paper or Mist at least 7:1; Copper buttons use dark text or ensure AA on Copper-on-Ink outlines. Never grey-on-grey for critical copy.
+Contrast: body on Snow or Void ≥ 7:1. Accent buttons: white text on Accent, or dark text only if contrast holds. No warm copper. No parchment. No neon lime wash.
 
 ## Type
-- **Display:** Fraunces (soft serif with optical sizing). Headlines only. Slightly condensed tracking on large sizes.
-- **UI / body:** Source Sans 3 (or system-ui fallback). High x-height for mobile.
-- Scale (mobile base 16px): display 2.25-2.75rem; section 1.5rem; body 1rem / 1.6; meta 0.8125rem.
-- Hierarchy by size and weight first; colour second. Avoid all-caps walls.
+- **Display:** Inter (tight, product UI) or SF-adjacent geometric sans via Inter + Space Grotesk for wordmark only.
+- Prefer one strong family: **Inter** for UI and display (Apple-like clarity). Optional Space Grotesk for logo only.
+- Scale: hero 2.75-4.25rem; section 1.75-2.25rem; body 1.0625rem / 1.5; meta 0.8125rem.
+- Tracking tight on large display (−0.04em). Hierarchy by size/weight; colour second.
 
 ## Layout and hierarchy
-- Mobile-first: single column, 20-24px side padding, generous section gaps (64-96px).
-- Sticky compact header with logo wordmark + “Talk to us” pill.
-- Hero: one claim, one subclaim, one primary CTA, one secondary text link.
-- “Fit strip” early: three scannable numbers (ticket, revenue, structures).
-- Cards with thin hairline borders on Slate/Paper, not heavy drop shadows.
-- Desktop: widen measure, optional two-column for criteria; keep phone composition as source of truth.
+- Mobile-first. Side padding 20-24px. Section gaps 80-120px (more air).
+- Sticky compact header + “Talk to us” pill.
+- Hero: one claim, short lede, primary CTA, secondary text link. Fit strip immediately below.
+- Prefer product-hero blocks and short proof rows over dense six-card grids.
+- Cards: thin hairlines, almost no shadow, calm hover (border only).
+- Phone composition is source of truth.
 
-## Motion (restrained)
-- Prefer opacity/transform under 200ms on interactive states only.
-- No autoplaying carousels; no counter animations that fight reduced-motion.
-- Honour `prefers-reduced-motion: reduce` (disable non-essential transitions).
-- Focus rings always visible (2px Copper offset), never removed.
+## Motion
+- ≤160ms opacity/transform on interactive states only.
+- No glow stacks, no parallax, no auto carousels.
+- Honour `prefers-reduced-motion: reduce`.
+- Focus rings: 2px Accent offset, always visible.
 
-## Accessibility (WCAG-minded)
-- Semantic landmarks: header, nav, main, footer.
-- Skip link to main content.
-- Tap targets ≥ 44px.
-- Form labels visible (not placeholder-only).
-- Error text in prose + aria.
-- Decorative SVG only; no hotlinked client photography required.
-- Australian English spelling in UI copy.
+## Accessibility
+- Skip link, landmarks, ≥44px targets, visible labels.
+- Australian English. No em dashes.
+- DRAFT badge + noindex on every page.
 
 ## What we are not
-- Not a clone of the current Elementor skin.
-- Not another indigo-gradient fintech landing page.
-- Not a logo zoo on the homepage.
+- Not institutional PE / family office / private-credit desk.
+- Not Fraunces + copper + warm paper.
+- Not loud neon fintech chrome.
+- Not Elementor clone or logo zoo.
 
-## Prototype implementation notes
-Static HTML/CSS/JS. Shared `css/styles.css` and `js/main.js`. SVG marks for regions and icons. Draft watermark in footer: “Redesign prototype for review. Not the live pfgrowth.com site.”
+## Prototype notes
+Static HTML/CSS/JS. HubSpot unwired. Footer draft watermark retained.
